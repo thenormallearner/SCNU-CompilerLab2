@@ -9,7 +9,8 @@ release:该文件夹里的Homework_2.exe文件为可执行文件。<br>
 Source:包含本项目的源文件，使用Qt Creator打开Homework_2.pro文件查看。<br>
 graph：<br>
 本项目是将NFA、DFA和最小化DFA图以有向图的形式呈现出来，这里用到了一个插件Graphviz,<br>
-关于Graphviz的使用请看https://www.jianshu.com/p/5b02445eca1d或者https://blog.csdn.net/gdp12315_gu/article/details/48373865，在此不赘述<br>
+关于Graphviz的使用请看https://www.jianshu.com/p/5b02445eca1d
+https://blog.csdn.net/gdp12315_gu/article/details/48373865<br>
 若想正常运行本程序的源代码，请将graph文件夹复制到build-Homework_2-Desktop_Qt_5_9_2_MinGW_32bit-Debug文件中。<br>
 <br><br>
 本项目仅供参考、学习。如有帮助，欢迎star ;)<br>
