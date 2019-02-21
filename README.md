@@ -13,7 +13,7 @@ graph：<br>
 https://blog.csdn.net/gdp12315_gu/article/details/48373865<br>
 若想正常运行本程序的源代码，请将graph文件夹复制到build-Homework_2-Desktop_Qt_5_9_2_MinGW_32bit-Debug文件中。<br>
 以下为画图部分的核心代码：<br>
-···C++
+···cpp
     QString z = QCoreApplication::applicationDirPath();
     z+="/graph/nfa.txt";
     QString m = QCoreApplication::applicationDirPath();
