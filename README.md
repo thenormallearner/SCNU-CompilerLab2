@@ -1,9 +1,9 @@
 # SCNU-CompilerLab2
 华南师大《编译原理》课程实验二——仿lex生成器<br>
 <br>
-本项目为华南师范大学《编译原理》课程的第二个实验——仿lex生成器。<br>
+本项目为华南师范大学《编译原理》课程的第二个实验——仿lex生成器。<br><br>
 开发语言：C++<br>
-开发环境：Qt5.9.2<br>
+开发环境：Qt5.9.2<br><br>
 文件夹里有7个文件：release，Source，演示视频，实验报告，ppt，graph文件，和readme文件，其中：<br>
 release:该文件夹里的Homework_2.exe文件为可执行文件。<br>
 Source:包含本项目的源文件，使用Qt Creator打开Homework_2.pro文件查看。<br>
@@ -13,19 +13,18 @@ graph：<br>
 https://blog.csdn.net/gdp12315_gu/article/details/48373865<br>
 若想正常运行本程序的源代码，请将graph文件夹复制到build-Homework_2-Desktop_Qt_5_9_2_MinGW_32bit-Debug文件中。<br>
 以下为画图部分的核心代码：<br>
-···cpp
-    QString z = QCoreApplication::applicationDirPath();
-    z+="/graph/nfa.txt";
-    QString m = QCoreApplication::applicationDirPath();
-    m+= "/graph/dot.exe";
-    qDebug()<<m;
-    //创建进程执行命令，根据dot.txt文件画出png图并保存在其目录下
-    QStringList arguments;
-    arguments << z<<"-Tpng"<<"-o"<<"nfa.png";
-    qDebug()<<arguments;
-    QProcess *pro = new QProcess;
-    int flag =pro->execute(m, arguments);
- ···
+        QString z = QCoreApplication::applicationDirPath();
+        z+="/graph/nfa.txt";
+        QString m = QCoreApplication::applicationDirPath();
+        m+= "/graph/dot.exe";
+        qDebug()<<m;
+        //创建进程执行命令，根据dot.txt文件画出png图并保存在其目录下
+        QStringList arguments;
+        arguments << z<<"-Tpng"<<"-o"<<"nfa.png";
+        qDebug()<<arguments;
+        QProcess *pro = new QProcess;
+        int flag =pro->execute(m, arguments);
+ 
 <br><br>
 本项目仅供参考、学习。如有帮助，欢迎star ;)<br>
 <br>
