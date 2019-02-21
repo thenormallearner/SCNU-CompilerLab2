@@ -12,6 +12,20 @@ graph：<br>
 关于Graphviz的使用请看https://www.jianshu.com/p/5b02445eca1d
 https://blog.csdn.net/gdp12315_gu/article/details/48373865<br>
 若想正常运行本程序的源代码，请将graph文件夹复制到build-Homework_2-Desktop_Qt_5_9_2_MinGW_32bit-Debug文件中。<br>
+以下为画图部分的核心代码：<br>
+···C++
+    QString z = QCoreApplication::applicationDirPath();
+    z+="/graph/nfa.txt";
+    QString m = QCoreApplication::applicationDirPath();
+    m+= "/graph/dot.exe";
+    qDebug()<<m;
+    //创建进程执行命令，根据dot.txt文件画出png图并保存在其目录下
+    QStringList arguments;
+    arguments << z<<"-Tpng"<<"-o"<<"nfa.png";
+    qDebug()<<arguments;
+    QProcess *pro = new QProcess;
+    int flag =pro->execute(m, arguments);
+ ···
 <br><br>
 本项目仅供参考、学习。如有帮助，欢迎star ;)<br>
 <br>
@@ -35,7 +49,7 @@ https://blog.csdn.net/gdp12315_gu/article/details/48373865<br>
     由各班班长或学习委员将各个同学或小组的实验源程序、可执行程序、测试用例、文档刻录成光盘。<br>
 <br>
 五、完成方式：可单一个人完成也可组队完成，最多2人。如果是组队，则需要把分工情况列表出来。<br>
-
-
-
+<br><br><br>
+致谢:本项目之所以能完成，少不了各位兄弟们的帮助，在此对帮助我、支持我的弟兄们表示感激。<br>
+在此，特别感谢洋神，他在我完成项目的过程中给了我许多帮助，谢谢啦(*°∀°)=3 <br>
 
