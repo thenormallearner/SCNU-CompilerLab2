@@ -1,0 +1,11 @@
+digraph abc{0->1[label=a];
+1->5[label=e];
+2->3[label=b];
+3->5[label=e];
+4->2[label=e];
+4->0[label=e];
+5->4[label=e];
+5->7[label=e];
+6->4[label=e];
+6->7[label=e];
+}

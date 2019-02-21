@@ -1,0 +1,7 @@
+digraph FA{
+0 [style = filled];
+3->4 [label = "a"];
+4->5 [label = "b"];
+5->3 [label = "c"];
+"finite automataε" [ shape = plaintext ];
+}
